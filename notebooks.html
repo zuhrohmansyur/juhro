@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -392,7 +392,17 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Matriks Augmented:</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tanpa-solusi">3. Tanpa Solusi</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Matriks Augmented:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-dan-jawaban">SOAL DAN JAWABAN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-dan-jawaban">SOAL DAN JAWABAN</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-1">tugas 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2">tugas 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-x-axis">1. Reflection about the x-axis*</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-y-axis">2. Reflection about the y-axis*</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-line-y-x">3. Reflection about the line ( y = x )*</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-origin">5. Reflection about the origin*</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -547,6 +557,96 @@ A = \begin{bmatrix} 1 &amp; 1 \\ 2 &amp; 3 \end{bmatrix}
 <p><span class="math notranslate nohighlight">\([
 A = \begin{bmatrix} 1 &amp; -1 \\ 1 &amp; 1 \end{bmatrix}
 ]\)</span></p>
+<section id="tugas-1">
+<h2>tugas 1<a class="headerlink" href="#tugas-1" title="Link to this heading">#</a></h2>
+<p>Untuk membuktikan bahwa fungsi</p>
+<p><span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2, v_1)\)</span>
+adalah transformasi linier, kita harus menunjukkan bahwa
+<span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2, v_1)\)</span>
+memenuhi dua sifat dasar transformasi linier, yaitu:</p>
+<ol class="arabic simple">
+<li><p>Additivitas (penjumlahan vektor):
+hitung$T(u + v) = T(u) + T(v</p></li>
+</ol>
+<p>langkah-langkah  <span class="math notranslate nohighlight">\(T(u + v) = \left( (u_1 + v_1) + (u_2 + v_2), u_1 + v_1 \right) = (u_1 + u_2 + v_1 + v_2, u_1 + v_1)\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(u) = (u_1 + u_2, u_1), \quad T(v) = (v_1 + v_2, v_1)\)</span>
+<span class="math notranslate nohighlight">\(T(u) + T(v) = (u_1 + u_2 + v_1 + v_2, u_1 + v_1)\)</span>
+<span class="math notranslate nohighlight">\(\begin{equation}
+T(u) = (u_1 + u_2, u_1), \quad T(v) = (v_1 + v_2, v_1)
+\end{equation}\)</span></p>
+<p>\begin{equation}
+T(u) + T(v) = (u_1 + u_2 + v_1 + v_2, u_1 + v_1)
+\end{equation}
+maka:
+<span class="math notranslate nohighlight">\(T(u + v) = T(u) + T(v)\)</span>
+hitung<span class="math notranslate nohighlight">\(T(c \cdot v)\)</span></p>
+<p><span class="math notranslate nohighlight">\(c \cdot v = (c v_1, c v_2)\)</span>
+<span class="math notranslate nohighlight">\(T(c \cdot v) = (c v_1 + c v_2, c v_1) = c(v_1 + v_2, v_1)\)</span>
+<span class="math notranslate nohighlight">\(T(v) = (v_1 + v_2, v_1) \quad \Rightarrow \quad c \cdot T(v) = (c(v_1 + v_2), c v_1)\)</span></p>
+<p>maka:
+<span class="math notranslate nohighlight">\(T(c \cdot v) = c \cdot T(v)\)</span></p>
+</section>
+<section id="tugas-2">
+<h2>tugas 2<a class="headerlink" href="#tugas-2" title="Link to this heading">#</a></h2>
+<section id="reflection-about-the-x-axis">
+<h3>1. Reflection about the x-axis*<a class="headerlink" href="#reflection-about-the-x-axis" title="Link to this heading">#</a></h3>
+<p>Matriks:
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}\)</span></p>
+<p>Transformasi: <span class="math notranslate nohighlight">\((x, y) \to (x, -y)\)</span></p>
+<p>Contoh:
+<span class="math notranslate nohighlight">\((2, 3) \to (2, -3)\)</span>
+<span class="math notranslate nohighlight">\((-1, 5) \to (-1, -5)\)</span></p>
+</section>
+<section id="reflection-about-the-y-axis">
+<h3>2. Reflection about the y-axis*<a class="headerlink" href="#reflection-about-the-y-axis" title="Link to this heading">#</a></h3>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Transformasi: <span class="math notranslate nohighlight">\((x, y) \to (-x, y)\)</span></p>
+<p>Contoh:
+<span class="math notranslate nohighlight">\((4, -2) \to (-4, -2)\)</span></p>
+<p><span class="math notranslate nohighlight">\((1, 7) \to (-1, 7)\)</span></p>
+</section>
+<section id="reflection-about-the-line-y-x">
+<h3>3. Reflection about the line ( y = x )*<a class="headerlink" href="#reflection-about-the-line-y-x" title="Link to this heading">#</a></h3>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{bmatrix}\)</span></p>
+<p>Transformasi:  <span class="math notranslate nohighlight">\((x, y) \to (y, x)\)</span></p>
+<p>Contoh
+<span class="math notranslate nohighlight">\((5, 2) \to (2, 5)\)</span></p>
+<p><span class="math notranslate nohighlight">\((-3, 7) \to (7, -3)\)</span></p>
+<p>###4. Reflection about the line ( y = -x )*</p>
+<p>Matriks:
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 &amp; -1 \\
+-1 &amp; 0
+\end{bmatrix}\)</span></p>
+<p>Transformasi: <span class="math notranslate nohighlight">\((x, y) \to (-y, -x)\)</span></p>
+<p>Contoh:</p>
+<p><span class="math notranslate nohighlight">\((3, 4) \to (-4, -3)\)</span></p>
+<p><span class="math notranslate nohighlight">\((-5, 1) \to (-1, 5)\)</span></p>
+</section>
+<section id="reflection-about-the-origin">
+<h3>5. Reflection about the origin*<a class="headerlink" href="#reflection-about-the-origin" title="Link to this heading">#</a></h3>
+<p>Matriks:
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}\)</span></p>
+<p>Transformasi: <span class="math notranslate nohighlight">\((x, y) \to (-x, -y)\)</span></p>
+<p>Contoh:</p>
+<p><span class="math notranslate nohighlight">\((2, -6) \to (-2, 6)\)</span></p>
+<p><span class="math notranslate nohighlight">\((-4, 3) \to (4, -3)\)</span></p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -620,7 +720,17 @@ A = \begin{bmatrix} 1 &amp; -1 \\ 1 &amp; 1 \end{bmatrix}
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Matriks Augmented:</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tanpa-solusi">3. Tanpa Solusi</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Matriks Augmented:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-dan-jawaban">SOAL DAN JAWABAN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-dan-jawaban">SOAL DAN JAWABAN</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-1">tugas 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2">tugas 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-x-axis">1. Reflection about the x-axis*</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-y-axis">2. Reflection about the y-axis*</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-line-y-x">3. Reflection about the line ( y = x )*</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-origin">5. Reflection about the origin*</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
   </nav></div>
