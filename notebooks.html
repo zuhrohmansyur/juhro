@@ -398,7 +398,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-x-axis">1. Reflection about the x-axis*</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-y-axis">2. Reflection about the y-axis*</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-line-y-x">3. Reflection about the line ( y = x )*</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-origin">5. Reflection about the origin*</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-origin">5. Reflection about the origin*</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">Soal</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dot-product-produk-titik">Dot Product (Produk Titik)</a></li>
 </ul>
 </li>
 </ul>
@@ -645,6 +649,62 @@ hitung<span class="math notranslate nohighlight">\(T(c \cdot v)\)</span></p>
 <p>Contoh:</p>
 <p><span class="math notranslate nohighlight">\((2, -6) \to (-2, 6)\)</span></p>
 <p><span class="math notranslate nohighlight">\((-4, 3) \to (4, -3)\)</span></p>
+<section id="soal">
+<h4>Soal<a class="headerlink" href="#soal" title="Link to this heading">#</a></h4>
+<p>1.definisi eigenvalue eigen vector
+Eigenvalue dan eigenvector adalah konsep penting dalam aljabar linear, khususnya dalam analisis matriks.
+Eigenvector (vektor eigen) adalah vektor bukan nol yang, ketika dikalikan oleh suatu matriks, hasilnya adalah kelipatan skalar dari vektor itu sendiri.
+Eigenvalue (nilai eigen) adalah skalar (bilangan) yang merupakan faktor pengali dari vektor eigen tersebut.</p>
+<p>2.mencari eigenvalue dan eigen vector<br />
+Langkah-langkah untuk mencari eigenvalue dan eigenvector dari suatu matriks A:</p>
+<p>a. Mencari Eigenvalue
+Untuk mencari eigenvalue, gunakan rumus:</p>
+<p><span class="math notranslate nohighlight">\(\det(A - \lambda I) = 0\)</span></p>
+<p>Langkah-langkah:</p>
+<p>Buat matriks<span class="math notranslate nohighlight">\(A - \lambda I\)</span>
+Hitung determinannya</p>
+<p>Selesaikan persamaan karakteristik untuk mencari nilai <span class="math notranslate nohighlight">\(\lambda\)</span>(eigenvalue)
+b. Mencari Eigenvector
+Untuk masing-masing nila <span class="math notranslate nohighlight">\(\lambda\)</span> substitusi ke persamaan
+$<span class="math notranslate nohighlight">\((A - \lambda I)\mathbf{v} = 0\)</span><span class="math notranslate nohighlight">\(
+Contoh untuk\)</span><span class="math notranslate nohighlight">\(\lambda = 3:\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+2 &amp; 1 \\1 &amp; 2 \\
+\end{bmatrix}\begin{bmatrix}
+-1 &amp; 1 \\1 &amp; -1
+\end{bmatrix} \begin{bmatrix}
+1 \\1\end{bmatrix}\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>eigen vector ortonormal menjadikan eigen vector satu kesatuan</p></li>
+</ol>
+<p>-Vektor-vektor saling tegak lurus
+-Vektor-vektor memiliki panjang 1
+Untuk menjadikan eigenvector ortonormal, kita:</p>
+<p>Normalisasi vektor eigen:
+Misalnya, dari eigenvector <span class="math notranslate nohighlight">\(\mathbf{v} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span>panjangnya:</p>
+<div class="math notranslate nohighlight">
+\[\|\mathbf{v}\| = \sqrt{1^2 + 1^2} = \sqrt{2}\]</div>
+<p>vektor ortonormal:
+$<span class="math notranslate nohighlight">\(\frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span>$</p>
+<p>Jika terdapat lebih dari satu eigenvector, kita pastikan mereka ortogonal. Jika belum ortogonal, kita bisa menggunakan metode Gram-Schmidt untuk mengortogonalisasi, lalu normalisasi hasilnya.</p>
+</section>
+</section>
+<section id="dot-product-produk-titik">
+<h3>Dot Product (Produk Titik)<a class="headerlink" href="#dot-product-produk-titik" title="Link to this heading">#</a></h3>
+<p>Pengertian Dot product (atau produk skalar) adalah operasi antara dua vektor yang menghasilkan skalar (bukan vektor). Operasi ini sering digunakan dalam fisika dan matematika untuk menghitung sudut antara dua vektor, kerja (work), dan proyeksi vektor.</p>
+<p>Contoh Soal dan Penyelesaian</p>
+<ol class="arabic simple">
+<li><p>Dot Product Dua Vektor (Rumus Aljabar)
+misalkan ada dua vektor
+$<span class="math notranslate nohighlight">\(\mathbf{A} = \langle 3, 4 \rangle, \quad \mathbf{B} = \langle 2, -1 \rangle\)</span>$</p></li>
+</ol>
+<p>Hitung A⋅B
+Penyelesaian:
+Gunakan rumus dot product aljabar:
+$<span class="math notranslate nohighlight">\(\mathbf{A} \cdot \mathbf{B} = a_1 b_1 + a_2 b_2 = (3)(2) + (4)(-1) = 6 - 4 = 2\)</span>$
+Jadi, hasil dot product-nya adalah 2</p>
+<iframe scrolling="no" title="geogebra1" src="https://www.geogebra.org/material/iframe/id/ummfspuh/width/1280/height/598/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="598px" style="border:0px;"> </iframe>
 </section>
 </section>
 </section>
@@ -726,7 +786,11 @@ hitung<span class="math notranslate nohighlight">\(T(c \cdot v)\)</span></p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-x-axis">1. Reflection about the x-axis*</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-y-axis">2. Reflection about the y-axis*</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-line-y-x">3. Reflection about the line ( y = x )*</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-origin">5. Reflection about the origin*</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-about-the-origin">5. Reflection about the origin*</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">Soal</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dot-product-produk-titik">Dot Product (Produk Titik)</a></li>
 </ul>
 </li>
 </ul>
